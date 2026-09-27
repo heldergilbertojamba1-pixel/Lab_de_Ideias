@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.flash').forEach(x=>setTimeout(()=>x.remove(),4500));const t=document.getElementById('user_type'),s=document.getElementById('company-size');function sync(){if(!t||!s)return;s.style.display=t.value==='company'?'block':'none'}if(t){t.addEventListener('change',sync);sync()}});

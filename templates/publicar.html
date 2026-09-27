@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Publicar{% endblock %}
+{% block content %}<div class="formwrap"><form class="form wide" method="post"><small class="gold">PUBLICAR</small><h1>Produto ou serviço</h1><label>Título<input name="title" required></label><label>Tipo<select name="kind"><option>Produto</option><option>Serviço</option></select></label><label>Preço<input name="price"></label><label>Descrição<textarea name="description" rows="6" required></textarea></label><button class="btn goldbg">Publicar</button></form></div>{% endblock %}

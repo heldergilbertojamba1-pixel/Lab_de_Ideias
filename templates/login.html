@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Entrar{% endblock %}
+{% block content %}<div class="formwrap"><form class="form" method="post"><small class="gold">ACESSO</small><h1>Entrar no Lab</h1><label>Email<input type="email" name="email" required></label><label>Senha<input type="password" name="password" required></label><button class="btn goldbg">Entrar</button><p>Não tens conta? <a href="{{url_for('registo')}}">Criar conta</a></p></form></div>{% endblock %}

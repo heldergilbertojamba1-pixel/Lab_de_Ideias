@@ -1,0 +1,3 @@
+{% extends "base.html" %}{% block title %}Oportunidades{% endblock %}
+{% block content %}<section class="head"><small class="gold">OPORTUNIDADES</small><h1>Encontra a próxima possibilidade.</h1></section>
+<div class="grid3">{% for o in opportunities %}<article class="card"><small class="gold">{{o.type or 'OPORTUNIDADE'}}</small><h3>{{o.title}}</h3><p>{{o.description}}</p><small>{{o.company_name or 'Lab de Ideias'}} · {{o.location or 'Online'}}</small></article>{% else %}<div class="empty">Ainda não existem oportunidades.</div>{% endfor %}</div>{% endblock %}

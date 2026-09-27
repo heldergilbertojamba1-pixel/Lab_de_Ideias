@@ -1,0 +1,6 @@
+lab_de_ideias.db
+data/
+uploads/
+.trashed-*
+__pycache__/
+*.pyc
